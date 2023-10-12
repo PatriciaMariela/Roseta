@@ -3,6 +3,7 @@ fechaActual = datetime.now()
 
 
 def extractorFechaALista(): 
+    """Se obtienen los valores de las variables día, mes y año"""
     dia = datetime.strftime(fechaActual,"%d")  
     mes = datetime.strftime(fechaActual,"%m")
     anio = datetime.strftime(fechaActual,"%Y")
@@ -20,12 +21,16 @@ def extractorFechaALista():
 listA = extractorFechaALista() 
 
 def primerSuma():
+    
     primerSuma=[]
     for x in range(7):
+        """Se suman los 8 valores de la primer lista generando otra lista nueva"""
         suma = listA[x]+listA[x+1]
         if suma <= 9:
             primerSuma.append(suma)
         elif suma > 9:
+                """Si la suma es 10 o mayor, se guarda el valor derecho del str, en el ejemplo del 10 se guarda el valor 0, 
+                si fuera un 12 se guardará un 2"""
                 primerSuma.append(int(str(suma)[1]))                   
     return primerSuma
     
