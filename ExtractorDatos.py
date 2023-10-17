@@ -131,7 +131,7 @@ def cuaternoA():
      if posC <= 9:
             cuateA.append(posC)
      else: cuateA.append(int(str(posC)[1]))
-     if posA <= 9:
+     if posD <= 9:
             cuateA.append(posD)
      else: cuateA.append(int(str(posD)[1]))
      return cuateA  
@@ -161,8 +161,8 @@ def cuaternoB():
 
      return cuateB
 
-cuate1=cuaternoA()
-cuate2=cuaternoB()
+cuate1=str(cuaternoA())
+cuate2=str(cuaternoB())
 
-print("Primer Cuaterno:" + str(cuate1))
-print("Segundo Cuaterno:" + str(cuate2))
+print("Primer Cuaterno:" + cuate1)
+print("Segundo Cuaterno:" + cuate2)
